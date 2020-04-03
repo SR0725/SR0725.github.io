@@ -2,49 +2,82 @@
 <html lang="zh_tw">
 <title>Ray</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#Home {
+  background-image:url('/picture/p1.png');
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-color: glay;
+  color: white;
+  padding: 80px;
+  text-align: center;
+}
+#AboutMe {
+  background-color: cornflowerblue;
+  color: white;
+  padding: 80px;
+  text-align: center;
+}
+#MyWork {
+  background-color: rgb(60, 60, 60);
+  color: white;
+  padding: 80px;
+  text-align: center;
+}
+#MyWorkProject {
+  background-color: rgb(70, 70, 70);
+  color: white;
+  padding: 80px;
+  text-align: center;
+}
+#MyWorkProject1 {
+  color: white;
+  text-align: left;
+	font-size:30px;
+}
+</style>
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
-</style>
 <body>
 
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Home</a>
-    <a href="#AbotMe" class="w3-bar-item w3-button w3-padding-large w3-hide-small">AboutMe</a>
-    <a href="#tour" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MyWork</a>
-    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTACT</a>
+    <a href="#Home" class="w3-bar-item w3-button w3-padding-large">Home</a>
+    <a href="#AboutMe" class="w3-bar-item w3-button w3-padding-large w3-hide-small">AboutMe</a>
+    <a href="#MyWorkProject" class="w3-bar-item w3-button w3-padding-large w3-hide-small">MyProject</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Contact</a>
   </div>
 </div>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">BAND</a>
-  <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">TOUR</a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTACT</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-</div>
 
 <!-- Page content -->
-<div style="max-width:2000px;margin-top:46px" style=background-color:gray;>
-
-  <div>
-    <img src="/picture/ray.jpg" align="center" style="width:30%;" >
+<div>
+  <div id="Home">
+    <img src="/picture/ray.jpg" align="Left" style="width:20%;" >
+		<span>
+				<p style="text-align:left;padding: 120px;font-size:30px;">
+					________Ray
+				<br style="font-size:10px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;夢想的實踐者
+				</p>
+		</span>
   </div>
 
-  <!-- The Band Section -->
-  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="AbotMe">
+  <div id="AboutMe">
     <h2 class="w3-wide">AboutMe</h2>
-    <p class="w3-justify">以前我就很熱愛在Minecraft地圖的設計上頭，在高中時無意接觸到Unity，從此開啟了我新的領域。</p>
+    <p class="w3-justify">以前我就很熱愛在Minecraft地圖的設計上頭，在高中時無意接觸到Unity，從此開啟了我新的領域。<br>我目前為夢想之都ㄉ爆肝技術部成員，希望能創造每一幅完美的句作<br>如果有任何問題歡迎向我提問喔~~</p>
+  </div>
+    
+	<!-- workpage -->
+	<div id="MyWorkProject">
+			<h2 style="text-align: left;ont-weight:bold;" >MinecraftData作品-傳送槍</h2>
+			<iframe src="https://forum.gamer.com.tw/C.php?bsn=18673&snA=181644" align:"right" style="height:400px;width:800px;"></iframe>
+			<p style="text-align: left;">還記得Ｐｏｒｔａｌ這遊戲嗎？<br>
+如果讓他幾乎還原地在Ｍｉｎｅｃｒａｆｔ呈現那是個怎樣的情況呢？<br>
+就由夢想之都的我　睿來為大家帶來一場科技的革新吧！</p>
   </div>
 </div>
-
-
+    
 </body>
 </html>
