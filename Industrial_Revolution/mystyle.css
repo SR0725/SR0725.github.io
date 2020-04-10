@@ -46,12 +46,12 @@
 		100% {left:0px; top:0px;}
 	}
 			
-	#Headback {
-		height: 93px;
+	.Headback {
+		height: 100px;
 		background-color: rgb(10, 10, 10);
 		overflow:hidden;
 	}
-	#Headword {
+	.Headword {
 		padding: 14px 16px;
 		position: relative;
 		color: white;
@@ -59,11 +59,15 @@
 		text-decoration: none;
 		height: 50%;
 	}	
-	#Headword:hover {
+	.Headword:hover {
 		padding: 14px 16px;
 		color: rgb(10, 10, 10);;
 		text-align: left;
 		background-color: rgb(180, 180, 180);
+	}
+
+	.Headback:hover {
+		height: 450px;
 	}
 
 	#Home {
@@ -76,62 +80,6 @@
 		color: white;
 		padding: 80px;
 		text-align: center;
-	}
-			
-	#AboutMe {
-		background-color: cornflowerblue;
-		color: white;
-		padding: 80px;
-		text-align: center;
-		}
-	#MyWorkProjectn {
-		background-color: rgb(60, 60, 60);
-		color: white;
-		padding: 80px;
-		text-align: center;
-	}
-	#MyWorkProject {
-		background-color: rgb(70, 70, 70);
-		color: white;
-		padding: 80px;
-		text-align: center;
-	}
-	#MyWorkProject1 {
-		color: white;
-		text-align: left;
-		font-size:30px;
-	}
-	#picture {
-		background-repeat:no-repeat;
-		background-size:cover
-		float:left;
-		width:392px;
-		height:216px;
-	}
-	#Contact {
-		background-image:url('/picture/p2.png');
-		background-repeat:no-repeat;
-		background-size:cover;
-		background-color: glay;
-		background-position: center;
-		color: white;
-		padding: 400px;
-		text-align: center;
-	}
-
-	#LastBack {
-		background-color: rgb(35, 35, 35);
-		color: white;
-		padding: 5px;
-		text-align: center;
-	}
-	#contact_picture {
-		width:240px;
-		height:240px;
-	}
-	#contact_picture1 {
-		width:40px;
-		height:40px;
 	}
 	</style>
 </head>

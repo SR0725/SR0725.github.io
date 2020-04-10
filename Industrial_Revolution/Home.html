@@ -35,18 +35,96 @@
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="icon" href="/Industrial_Revolution/picture/ir_logo.ico" type="image/x-icon" / >
 	
+	<style>
+	.dropbtn {
+		border: none;
+		cursor: pointer;
+	}
+
+	.dropdown {
+		position: relative;
+		display: inline-block;
+	}
+
+	.dropdown-content {
+		display: none;
+		position: absolute;
+		background-color: #f9f9f9;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		z-index: 1;
+	}
+
+	.dropdown-content a {
+		color: black;
+		padding: 12px 16px;
+		text-decoration: none;
+		display: block;
+	}
+
+	.dropdown-content a:hover {background-color: #f1f1f1}
+
+	.dropdown:hover .dropdown-content {
+		display: block;
+	}
+		
+	</style>
+	
 </head>
 
 <body style="background-color: rgb(15,15,15);">
 
 <!-- Navbar --> 
 	<div class="w3-top">
-		<div id="Headback" valign="bottom">
-			<br><div  style="padding-left:50px;"><img src="/Industrial_Revolution/picture/logo.png" align="Left" style="width:16px;"><strong style="color: white;text-align: center;padding-left:15px;">Minecraft&nbsp;工業革命_重啟</strong></div><p>
-			<start1><a href="#Home" id="Headword">Home</a>
-			<a href="#AboutMe" id="Headword">AboutMe</a>
-			<a href="#MyWorkProject" id="Headword">MyProject</a>
-			<a href="#Contact" id="Headword">Contact</a></start1>
+		<div class="Headback" valign="bottom">
+			<br><div  style="padding-left:50px;"><img src="/Industrial_Revolution/picture/logo.png" align="Left" style="width:16px;"><strong style="color: white;text-align: center;padding-left:15px;">Minecraft&nbsp;<font face="DFKai-sb" size="4">工業革命_重啟</font></strong></div><p>
+			<start1><div class="dropdown">
+				<a class="Headword"><font face="DFKai-sb" size="4">遊戲說明</font></a>
+					<div class="dropdown-content">
+					<a href="#"><font face="DFKai-sb" size="4">遊戲介紹</font></a>
+					<a href="#"><font face="DFKai-sb" size="4">如何安裝</font></a>
+					<a href="#"><font face="DFKai-sb" size="4">製作名單</font></a>
+					</div>
+			</div>
+			<div class="dropdown">
+				<a class="Headword"><font face="DFKai-sb" size="4" >遊戲教程</font></a>
+				<div class="dropdown-content">
+					<a href="#"><font face="DFKai-sb" size="4">新手教程</font></a>
+					<a href="#"><font face="DFKai-sb" size="4">高級教程</font></a>
+					<a href="#"><font face="DFKai-sb" size="4">特殊附註</font></a>
+					</div>
+			</div>
+				<div class="dropdown">
+				<a class="Headword"><font face="DFKai-sb" size="4">工業物件</font></a>
+				<div class="dropdown-content">
+					<a href="#"><font face="DFKai-sb" size="4">基礎工業</font></a>
+					<a href="#"><font face="DFKai-sb" size="4">零件工業</font></a>
+					<a href="#"><font face="DFKai-sb" size="4">電力科技</font></a>
+					<a href="#"><font face="DFKai-sb" size="4">個人工具</font></a>
+					<a href="#"><font face="DFKai-sb" size="4">民生科技</font></a>
+					<a href="#"><font face="DFKai-sb" size="4">衣物製程</font></a>
+					<a href="#"><font face="DFKai-sb" size="4">軍事工業</font></a>
+					</div>
+			</div>
+			<div class="dropdown">
+				<a class="Headword"><font face="DFKai-sb" size="4">科技資訊</font></a>
+				<div class="dropdown-content">
+					<a href="#"><font face="DFKai-sb" size="4">文明科技</font></a>
+					<a href="#"><font face="DFKai-sb" size="4">軍事科技</font></a>
+					<a href="#"><font face="DFKai-sb" size="4">能源科技</font></a>
+					<a href="#"><font face="DFKai-sb" size="4">民生科技</font></a>
+					<a href="#"><font face="DFKai-sb" size="4">精密科技</font></a>
+					</div>
+			</div>
+			<div class="dropdown">
+				<a class="Headword"><font face="DFKai-sb" size="4">地形結構</font></a>
+				<div class="dropdown-content">
+					<a href="#"><font face="DFKai-sb" size="4">礦脈結構</font></a>
+					<a href="#"><font face="DFKai-sb" size="4">村莊建築</font></a>
+					</div>
+			</div>
+			<div class="dropdown">
+				<a href="#" class="Headword"><font face="DFKai-sb" size="4">聯絡我們</font></a>
+			</div></start1>
 		</div>
 	</div>
 
