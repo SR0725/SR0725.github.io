@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<head>
+		
+		<style>
+	start {
+		position: relative;
+		animation-name: start;
+		animation-duration: 2s;
+	}
+	start1{
+		position: relative;
+		animation-name: start1;
+		animation-duration: 2s;
+	}
+
+	@keyframes start1{
+		0%   {left:-500px; top:0px;}
+		100% {left:0px; top:0px;}
+	}
+	start2{
+		position: relative;
+		animation-name: start2;
+		animation-duration: 2s;
+	}
+
+	@keyframes start2 {
+		0%   {left:800px; top:0px;}
+		100% {left:0px; top:0px;}
+	}
+	start3{
+		position: relative;
+		animation-name: start3;
+		animation-duration: 2s;
+	}
+	@keyframes start3 {
+		0%   {left:0px; top:-1000px;}
+		100% {left:0px; top:0px;}
+	}
+	start4{
+		position: relative;
+		animation-name: start4;
+		animation-duration: 2s;
+	}
+	@keyframes start4 {
+		0%   {left:0px; top:1000px;}
+		100% {left:0px; top:0px;}
+	}
+			
+	.Headback {
+		height: 100px;
+		background-color: rgb(10, 10, 10);
+		overflow:hidden;
+	}
+	.Headword {
+		padding: 14px 16px;
+		position: relative;
+		color: white;
+		text-align: left;
+		text-decoration: none;
+		height: 50%;
+	}	
+	.Headword:hover {
+		padding: 14px 16px;
+		color: rgb(10, 10, 10);;
+		text-align: left;
+		background-color: rgb(180, 180, 180);
+	}
+
+	.Headback:hover {
+		height: 450px;
+	}
+
+	#Home {
+		height: 500px;
+		background-image:url('/picture/p1.png');
+		background-repeat:no-repeat;
+		background-size:cover;
+		background-color: glay;
+		background-position: center;
+		color: white;
+		padding: 80px;
+		text-align: center;
+	}
+	</style>
+</head>
+</html>
