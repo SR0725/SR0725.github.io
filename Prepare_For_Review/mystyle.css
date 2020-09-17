@@ -46,7 +46,7 @@
 		100% {left:0px; top:0px;}
 	}
 
-	 @media only screen and (max-width: 4000px){		
+	 @media only screen and (max-width: 12000px){		
 	#t01{
 		border: 2px solid gray;
 		border-collapse: collapse;
@@ -163,7 +163,7 @@
 		text-align: center;
 	}
 }
- @media only screen and (max-width: 1200px){		
+ @media only screen and (max-width: 1000px){		
 	#t01{
 		border: 2px solid gray;
 		border-collapse: collapse;
@@ -190,7 +190,7 @@
 		width:100px;
 	}
 	#Headword {
-		padding: 14px 20px;
+		padding: 14px 16px;
 		position: relative;
 		color: white;
 		text-align: left;
@@ -249,7 +249,7 @@
 		width:100px;
 	}
 	#Headword {
-		padding: 14px 20px;
+		padding: 14px 16px;
 		position: relative;
 		color: white;
 		text-align: left;
