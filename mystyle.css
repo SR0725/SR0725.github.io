@@ -45,6 +45,9 @@
 		0%   {left:0px; top:1000px;}
 		100% {left:0px; top:0px;}
 	}
+
+        @media only screen and (max-width: 12000px)
+        {
 			
 	#Headback {
 		height: 93px;
@@ -65,7 +68,14 @@
 		text-align: left;
 		background-color: rgb(180, 180, 180);
 	}
-
+        #Fsword1{
+        text-align:left;
+        text-indent: 20px;
+        }
+        #Fsword2{
+        text-align:left;
+        text-indent: 50px;
+        }
 	#Home {
 		height: 500px;
 		background-image:url('/picture/p1.png');
@@ -133,6 +143,7 @@
 		width:40px;
 		height:40px;
 	}
+}
 	</style>
 </head>
 </html>
