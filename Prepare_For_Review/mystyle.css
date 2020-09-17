@@ -222,6 +222,65 @@
 		text-align: center;
 	}
 }
+@media only screen and (max-width: 800px){		
+	#t01{
+		border: 2px solid gray;
+		border-collapse: collapse;
+		background-color: rgb(50, 50, 50);
+		padding: 30px;
+
+	}
+	#t02{
+		border: 2px solid gray;
+		border-collapse: collapse;
+		background-color: rgb(25, 25, 25);
+		padding: 30px;
+	}
+	#Headback {
+		height: 180px;
+		background-color: rgb(10, 10, 10);
+		overflow:hidden;
+	}
+        #Hiword {
+		font-size:10px;
+                text-align:left;
+	}
+        #Hipic{
+		width:100px;
+	}
+	#Headword {
+		padding: 14px 20px;
+		position: relative;
+		color: white;
+		text-align: left;
+		text-decoration: none;
+		height: 50%;
+	}	
+	#Headword:hover {
+		padding: 14px 16px;
+		color: rgb(10, 10, 10);;
+		text-align: left;
+		background-color: rgb(180, 180, 180);
+	}
+
+	#Home {
+		height: 500px;
+		background-image:url('/Prepare_For_Review/picture/p1.jpg');
+		background-repeat:no-repeat;
+		background-size: 100% 100%;
+		background-color: glay;
+		background-position: center;
+		color: white;
+		padding: 80px;
+		text-align: center;
+	}
+	#LastBack {
+		background-color: rgb(35, 35, 35);
+		color: white;
+		padding: 5px;
+		text-align: center;
+	}
+}
 	</style>
 </head>
 </html>
