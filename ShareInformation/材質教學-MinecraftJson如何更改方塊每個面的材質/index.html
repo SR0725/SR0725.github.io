@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>如何更改方塊每個面的材質</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+				<!-- 開頭 -->
+					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+						<div class="content">
+							<h2>【材質教學】</h2><h2>MinecraftJson  如何更改方塊每個面的材質</h2>
+							<p>這個改法適用於1.13以上，透過修改原版材質JSON檔來完成修改</p>
+							<ul class="actions stacked">
+								<li><a href="https://ray0725.cf/ShareInformation/" class="button">回到前頁</a></li>
+							</ul>
+						</div>
+						<div class="image">
+							<img src="images/spotlight01.jpg" alt="" />
+						</div>
+					</section>
+
+				<!-- 核心 -->
+					<section class="wrapper style1 align-center">
+						<div class="inner" align="left">
+							<h2>修改方式</h2>
+							<p>首先打開你的材質包資料夾
+							<br>照這個路徑開C:\Users\csdd\AppData\Roaming\.minecraft\resourcepacks\你的材質包資料夾\assets\minecraft\models\block
+							<br>開材質包->開assets->開minecraft->開models->開block
+							<br>然後找你要改的方塊材質JSON檔
+							<br>比如說我要改鵝卵石就改cobblestone.json的檔案
+							<br>接著用編輯器(或者直接用記事本打開)
+							<br>將底下這段程式碼貼上去
+							<script src="https://gist.github.com/SR0725/a08194688302595fb8500026d203710a.js"></script>
+							<p>比如說合成台的樣子範例
+							<script src="https://gist.github.com/SR0725/a477ab4a59e2620cdbcc0b95ba19da1b.js"></script>
+							<p>很好，接下來你畫了一張圖片，要把它變成合成台的上方圖片
+							<br>假設那張圖片叫做picture.png
+							<br>接下來把它放在這裡
+							<br>C:\Users\csdd\AppData\Roaming\.minecraft\resourcepacks\你的材質包資料夾\assets\minecraft\textures\block
+							<br>也就是開材質包->開assets->開minecraft->開textures->開block
+							<br>然後改一下Json檔
+							<script src="https://gist.github.com/SR0725/90df3d2d53eb8968d95f3fce52ea5e5e.js"></script>
+							<p>我們要改方塊上方的圖案就是改
+							<br>"up": "block/crafting_table_top",這行
+							<br>將原本crafting_table_top改成你圖片的名稱
+							<br>比如說是picture.png就改成
+							<br>"up": "block/picture",幾可
+							<br>按儲存回Minecraft重新整理
+							<br>完成
+						</div>
+					</section>
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+							<p>&copy; 網頁擁有者：<a href="https://ray0725.cf">睿.Ray</a>.</p>
+					</footer>
+			</div>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
