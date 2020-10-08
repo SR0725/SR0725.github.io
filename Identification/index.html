@@ -24,45 +24,23 @@
 	</head>
 	
 	
-	<body class="is-preload">
+	<body class="is-preload" style="background-color:RGB(25, 25, 25);">
 
-			<div id="wrapper" class="divided" style="background-color:RGB(25, 25, 25);">
+			<div id="wrapper" class="divided"  style="background-image: url(images/background.PNG);">
 
 				<!-- 核心 -->
-					<section class="wrapper style1 align-center" style="background-image: url(images/background.PNG);">
+					<section class="wrapper style1 align-center">
 						<div class="inner" align="left" >
-							<h4>
-							<h3><p>修改方式</h3>
-							<p>首先打開你的材質包資料夾
-							<br>照這個路徑開<code>C:\Users\csdd\AppData\Roaming\.minecraft\resourcepacks\你的材質包資料夾\assets\minecraft\models\block</code>
-							<br>開材質包->開assets->開minecraft->開models->開block
-							<br>然後找你要改的方塊材質JSON檔
-							<br>比如說我要改鵝卵石就改cobblestone.json的檔案
-							<br>接著用編輯器(或者直接用記事本打開)
-							<br>將底下這段程式碼貼上去
-							<script src="https://gist.github.com/SR0725/a08194688302595fb8500026d203710a.js"></script>
-							<p>比如說合成台的樣子範例
-							<script src="https://gist.github.com/SR0725/a477ab4a59e2620cdbcc0b95ba19da1b.js"></script>
-							<p>很好，接下來你畫了一張圖片，要把它變成合成台的上方圖片
-							<br>假設那張圖片叫做picture.png
-							<br>接下來把它放在這裡
-								<br><code>C:\Users\csdd\AppData\Roaming\.minecraft\resourcepacks\你的材質包資料夾\assets\minecraft\textures\block</code>
-							<br>也就是開材質包->開assets->開minecraft->開textures->開block
-							<br>然後改一下Json檔
-							<script src="https://gist.github.com/SR0725/90df3d2d53eb8968d95f3fce52ea5e5e.js"></script>
-							<p>我們要改方塊上方的圖案就是改
-							<br>"up": "block/crafting_table_top",這行
-							<br>將原本crafting_table_top改成你圖片的名稱
-							<br>比如說是picture.png就改成
-							<br>"up": "block/picture",幾可
-							<br>按儲存回Minecraft重新整理
-							<br>完成
-							</h4>
+							<form name=myform onsubmit="password(this.pwde.value)">
+							密碼欄位：<input type="password" name="pwde" style="border:3px #4F4F4F solid;">
+								<br>
+								<input type="submit" name="submit" value="送出密碼！" style="border:2px #C2C2C2 solid;color: white !important;;">
+							</form>
 						</div>
 					</section>
 				<!-- Footer -->
-					<footer class="wrapper style3 align-center" >
-						<br>Minecraft資料分享
+					<footer class="wrapper style3 align-center" style="padding-bottom: 600px;
+　position: static;">
 						<p>&copy; Copyright by <a href="https://ray0725.cf">睿.Ray</a>. All Rights Reserved.</p>
 					</footer>
 			</div>
@@ -79,20 +57,24 @@
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		
 	<button type="button" id="BackTop" class="toTop-arrow"></button>
-	<script>
-		$(function(){
-			$('#BackTop').click(function(){ 
-				$('html,body').animate({scrollTop:0}, 333);
-			});
-			$(window).scroll(function() {
-				if ( $(this).scrollTop() > 300 ){
-					$('#BackTop').fadeIn(222);
-				} else {
-					$('#BackTop').stop().fadeOut(222);
-				}
-			}).scroll();
-		});
-	</script>
+
+	
+	<SCRIPT LANGUAGE="JavaScript">
+		function password(pwd)
+		{
+
+		if(pwd=="Ray0725Login")
+		{
+		document.location.href="https://ray0725.cf/Application_Documents";
+		alert("密碼正確，網站導向中！");
+		}
+		else
+
+			{
+			alert("密碼錯誤！");
+			}
+		}
+	</SCRIPT>
 	</body>
 	
 	
