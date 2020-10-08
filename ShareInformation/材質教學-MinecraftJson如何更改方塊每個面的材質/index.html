@@ -29,6 +29,8 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
+	
+	
 	<body class="is-preload">
 
 		<!-- Wrapper -->
@@ -38,7 +40,7 @@
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first" style="background-color:RGB(240, 240, 240);">
 						<div class="content">
 							<h2>【材質教學】</h2><h2>MinecraftJson  如何更改方塊每個面的材質</h2>
-							<p>這個改法適用於1.13以上，透過修改原版材質JSON檔來完成修改</p>
+							<p style="color: RGB(140, 140, 140);">這個改法適用於1.13以上，透過修改原版材質JSON檔來完成修改</p>
 							<ul class="actions stacked">
 								<li><a href="https://ray0725.cf/ShareInformation/" class="button">回到前頁</a></li>
 							</ul>
@@ -86,7 +88,7 @@
 						<p>&copy; Copyright by <a href="https://ray0725.cf">睿.Ray</a>. All Rights Reserved.</p>
 					</footer>
 			</div>
-
+	
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
@@ -96,6 +98,25 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		
+	<button type="button" id="BackTop" class="toTop-arrow"></button>
+	<script>
+		$(function(){
+			$('#BackTop').click(function(){ 
+				$('html,body').animate({scrollTop:0}, 333);
+			});
+			$(window).scroll(function() {
+				if ( $(this).scrollTop() > 300 ){
+					$('#BackTop').fadeIn(222);
+				} else {
+					$('#BackTop').stop().fadeOut(222);
+				}
+			}).scroll();
+		});
+	</script>
 	</body>
+	
+	
+	
 </html>
